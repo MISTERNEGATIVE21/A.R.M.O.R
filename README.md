@@ -1,4 +1,14 @@
-# ARMOR: Advanced Remote Monitoring System 🛡️
+
+# ARMOR: A One-Step Solution Against 🛡️:
+- **A**ssault 🥊
+- **R**esentment 😠
+- **M**olestation 🚫
+- **O**ffense ⚠️
+- **R**ape 🆘
+
+Join us in our mission to provide safety and security for all. 🤝
+
+---
 
 ## Empowering Women's Safety 👩‍🦰🔐
 
@@ -8,17 +18,6 @@
 ### Our Aim 🎯
 1. Transforming fear into confidence, one woman at a time, through innovative safety solutions.
 2. Building a Safer Tomorrow for Women!
-
----
-
-### A One-Step Solution Against:
-- **A**ssault 🥊
-- **R**esentment 😠
-- **M**olestation 🚫
-- **O**ffense ⚠️
-- **R**ape 🆘
-
-Join us in our mission to provide safety and security for all. 🤝
 
 ---
 
