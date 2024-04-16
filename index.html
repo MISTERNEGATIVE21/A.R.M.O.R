@@ -69,6 +69,15 @@
             font-size: 0.8rem;
             color: #999;
         }
+
+        .expo-snack {
+            overflow: hidden;
+            background: #0C0D0E;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            height: 505px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -102,8 +111,13 @@
     </div>
 
     <div class="container mt-5">
+        <!-- Expo Snack Embed -->
+        <div class="expo-snack" data-snack-id="@misternegative/consentium_mobile_sensors" data-snack-platform="android"
+             data-snack-preview="true" data-snack-theme="dark"></div>
+        <script async src="https://snack.expo.dev/embed.js"></script>
+        
         <!-- A.R.M.O.R Explanation Section -->
-        <section id="about-armor" class="text-center">
+        <section id="about-armor" class="text-center mt-5">
             <h2>A one-step solution against Assault, Resentment, Molestation, Offense, Rape</h2>
             <p>Join Us in our mission to provide safety and security for all.</p>
             <img src="images/armor-logo.png" alt="ARMOR Logo" class="img-fluid">
