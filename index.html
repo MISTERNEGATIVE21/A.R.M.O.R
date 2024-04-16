@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.R.M.O.R - Advanced Remote Monitoring System</title>
+    <title>ARMOR Protection System</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -15,16 +15,30 @@
             color: #333;
         }
 
-        .hero-section {
-            background: linear-gradient(to right, #6a82fb, #fc5c7d);
+        .carousel-item {
             color: #fff;
-            padding: 2rem;
+            min-height: 300px; /* Adjust the height of the carousel */
+            background-color: navy; /* Default background color */
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .hero-section h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
+        .carousel-item.purple {
+            background-color: purple;
+        }
+
+        .carousel-item.burgundy {
+            background-color: burgundy;
+        }
+
+        .carousel-caption {
+            bottom: 20%;
+        }
+
+        .carousel-indicators li {
+            background-color: #fff;
         }
 
         .button {
@@ -45,131 +59,82 @@
             background-color: #eb3b5a;
         }
 
-        .safety-features {
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            padding: 2rem;
-            margin: 2rem auto;
-            max-width: 800px;
-        }
-
-        .safety-features h3 {
-            color: #4a69bd;
-            margin-bottom: 1rem;
-        }
-
         footer {
             background-color: #333;
             color: #fff;
             padding: 1rem;
             text-align: center;
         }
-
-        .hidden-footer {
-            font-size: 0.8rem;
-            color: #999;
-        }
-
-        .expo-snack {
-            overflow: hidden;
-            background: #0C0D0E;
-            border: 1px solid var(--color-border);
-            border-radius: 4px;
-            height: 505px;
-            width: 100%;
-        }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="#">A.R.M.O.R</a>
+            <a class="navbar-brand" href="#">ARMOR</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#sign-up">Sign Up</a>
+                        <a class="nav-link" href="#features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sign-in">Sign In</a>
+                        <a class="nav-link" href="#premium">Premium</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/yourusername/armor" target="_blank">GitHub</a>
+                        <a class="nav-link" href="#safesphere">SafeSphere</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="hero-section">
-        <h2>Empowering Women's Safety</h2>
-        <p>"Creating a world where women feel empowered, supported, and safe, one tap at a time."</p>
-        <p>"Transforming fear into confidence, one woman at a time, through innovative safety solutions. Building a Safer Tomorrow for Women!"</p>
-        <button class="button">Download ARMOR</button>
+    <div id="armorCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#armorCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#armorCarousel" data-slide-to="1"></li>
+            <li data-target="#armorCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active navy">
+                <div class="carousel-caption">
+                    <h5>ARMOR: A One-Step Solution Against 🛡️</h5>
+                    <p>Assault 🥊 Resentment 😠 Molestation 🚫 Offense ⚠️ Rape 🆘</p>
+                    <p>Join us in our mission to provide safety and security for all. 🤝</p>
+                </div>
+            </div>
+            <div class="carousel-item purple">
+                <div class="carousel-caption">
+                    <h5>Empowering Women's Safety 👩‍🦰🔐</h5>
+                    <p>Vision 🌟 "Creating a world where women feel empowered, supported, and safe, one tap at a time."</p>
+                </div>
+            </div>
+            <div class="carousel-item burgundy">
+                <div class="carousel-caption">
+                    <h5>Our Aim 🎯</h5>
+                    <p>Transforming fear into confidence, one woman at a time, through innovative safety solutions.</p>
+                    <p>Building a Safer Tomorrow for Women!</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#armorCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#armorCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 
-    <div class="container mt-5">
-        <!-- Expo Snack Embed -->
-        <div class="expo-snack" data-snack-id="@misternegative/consentium_mobile_sensors" data-snack-platform="android"
-             data-snack-preview="true" data-snack-theme="dark"></div>
-        <script async src="https://snack.expo.dev/embed.js"></script>
-        
-        <!-- A.R.M.O.R Explanation Section -->
-        <section id="about-armor" class="text-center mt-5">
-            <h2>A one-step solution against Assault, Resentment, Molestation, Offense, Rape</h2>
-            <p>Join Us in our mission to provide safety and security for all.</p>
-            <img src="images/armor-logo.png" alt="ARMOR Logo" class="img-fluid">
-        </section>
-
-        <!-- Statistics Section -->
-        <section id="statistics" class="text-center mt-5">
-            <h2>RAPES - AN IMMEDIATE CONCERN OF MANKIND</h2>
-            <p>In 2022, the total number of rape cases reported in India amounted to over 31 thousand...</p>
-            <img src="images/statistics-graph.png" alt="Statistics Graph" class="img-fluid">
-        </section>
-
-        <!-- Features Section -->
-        <section id="features" class="text-center mt-5">
-            <h2>KNOW YOUR APP!!!</h2>
-            <p>YOU WANT IT? WE GOT IT</p>
-            <ul class="list-unstyled">
-                <li>Panic Button</li>
-                <li>Warning Button</li>
-                <li>Alert Button</li>
-                <!-- More features listed here -->
-            </ul>
-        </section>
-
-        <!-- Who Can Use Section -->
-        <section id="who-can-use" class="text-center mt-5">
-            <h2>WHO CAN USE THE APP!!!</h2>
-            <p>Our app is designed for women of all ages and backgrounds...</p>
-        </section>
-
-        <!-- Premium Features Section -->
-        <section id="premium-features" class="text-center mt-5">
-            <h2>TRY OUT PREMIUM</h2>
-            <ul class="list-unstyled">
-                <li>Audio Recording</li>
-                <li>Speed Dialing</li>
-                <li>Fingerprint Sensor</li>
-                <!-- More premium features listed here -->
-            </ul>
-        </section>
-
-        <!-- Introducing SafeSphere -->
-        <section id="safesphere" class="text-center mt-5">
-            <h2>SAFESPHERE - KEY TO SAFETY</h2>
-            <p>Introducing the "SafeSphere" a revolutionary women's safety gadget...</p>
-            <img src="images/safesphere-product.png" alt="SafeSphere Gadget" class="img-fluid">
-        </section>
-    </div>
+    <!-- Rest of the content goes here -->
 
     <footer>
-        <p>&copy; 2024 A.R.M.O.R - Advanced Remote Monitoring System</p>
-        <div class="hidden-footer">Ensuring safety and peace of mind.</div>
+        <p>&copy; 2024 ARMOR - Advanced Remote Monitoring System</p>
     </footer>
 
     <!-- Include Bootstrap JS and its dependencies -->
