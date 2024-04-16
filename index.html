@@ -1,6 +1,3 @@
-Certainly! Below is the full HTML code that combines the previous Expo Snack embed with the detailed ARMOR content you provided. This code includes the structure and basic styling for a complete webpage.
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +5,7 @@ Certainly! Below is the full HTML code that combines the previous Expo Snack emb
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A.R.M.O.R - Advanced Remote Monitoring System</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -15,13 +13,6 @@ Certainly! Below is the full HTML code that combines the previous Expo Snack emb
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
-        }
-
-        header {
-            background-color: #4a69bd;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
         }
 
         .hero-section {
@@ -36,13 +27,25 @@ Certainly! Below is the full HTML code that combines the previous Expo Snack emb
             margin-bottom: 1rem;
         }
 
-        section {
-            padding: 2rem;
-            text-align: center;
+        .button {
+            background-color: #fc5c7d;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #eb3b5a;
         }
 
         .safety-features {
-            background-color: #fff;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             padding: 2rem;
@@ -66,37 +69,30 @@ Certainly! Below is the full HTML code that combines the previous Expo Snack emb
             font-size: 0.8rem;
             color: #999;
         }
-
-        .button {
-            background-color: #fc5c7d;
-            color: #fff;
-            padding: 1rem 2rem;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 1rem;
-            margin-top: 1rem;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #eb3b5a;
-        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>A.R.M.O.R - Advanced Remote Monitoring System</h1>
-        <nav>
-            <a href="#sign-up">Sign Up</a>
-            <a href="#sign-in">Sign In</a>
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">A.R.M.O.R</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sign-up">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sign-in">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/yourusername/armor" target="_blank">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div class="hero-section">
         <h2>Empowering Women's Safety</h2>
@@ -105,31 +101,26 @@ Certainly! Below is the full HTML code that combines the previous Expo Snack emb
         <button class="button">Download ARMOR</button>
     </div>
 
-    <!-- Expo Snack Embed -->
-    <div data-snack-id="@misternegative/consentium_mobile_sensors" data-snack-platform="android"
-        data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#0C0D0E;
-        border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
-    <script async src="https://snack.expo.dev/embed.js"></script>
-
-    <main>
+    <div class="container mt-5">
         <!-- A.R.M.O.R Explanation Section -->
-        <section id="about-armor">
+        <section id="about-armor" class="text-center">
             <h2>A one-step solution against Assault, Resentment, Molestation, Offense, Rape</h2>
             <p>Join Us in our mission to provide safety and security for all.</p>
+            <img src="images/armor-logo.png" alt="ARMOR Logo" class="img-fluid">
         </section>
 
         <!-- Statistics Section -->
-        <section id="statistics">
+        <section id="statistics" class="text-center mt-5">
             <h2>RAPES - AN IMMEDIATE CONCERN OF MANKIND</h2>
             <p>In 2022, the total number of rape cases reported in India amounted to over 31 thousand...</p>
-            <!-- Include graphs or statistics here -->
+            <img src="images/statistics-graph.png" alt="Statistics Graph" class="img-fluid">
         </section>
 
         <!-- Features Section -->
-        <section id="features">
+        <section id="features" class="text-center mt-5">
             <h2>KNOW YOUR APP!!!</h2>
             <p>YOU WANT IT? WE GOT IT</p>
-            <ul>
+            <ul class="list-unstyled">
                 <li>Panic Button</li>
                 <li>Warning Button</li>
                 <li>Alert Button</li>
@@ -138,44 +129,38 @@ Certainly! Below is the full HTML code that combines the previous Expo Snack emb
         </section>
 
         <!-- Who Can Use Section -->
-        <section id="who-can-use">
+        <section id="who-can-use" class="text-center mt-5">
             <h2>WHO CAN USE THE APP!!!</h2>
             <p>Our app is designed for women of all ages and backgrounds...</p>
         </section>
 
         <!-- Premium Features Section -->
-        <section id="premium-features">
+        <section id="premium-features" class="text-center mt-5">
             <h2>TRY OUT PREMIUM</h2>
-            <ul>
+            <ul class="list-unstyled">
                 <li>Audio Recording</li>
                 <li>Speed Dialing</li>
                 <li>Fingerprint Sensor</li>
                 <!-- More premium features listed here -->
             </ul>
-            <div class="pricing-plans">
-                <!-- Pricing Plans -->
-            </div>
         </section>
 
         <!-- Introducing SafeSphere -->
-        <section id="safesphere">
+        <section id="safesphere" class="text-center mt-5">
             <h2>SAFESPHERE - KEY TO SAFETY</h2>
             <p>Introducing the "SafeSphere" a revolutionary women's safety gadget...</p>
+            <img src="images/safesphere-product.png" alt="SafeSphere Gadget" class="img-fluid">
         </section>
-    </main>
+    </div>
 
     <footer>
-        <p>&copy; 2023 A.R.M.O.R - Advanced Remote Monitoring System</p>
+        <p>&copy; 2024 A.R.M.O.R - Advanced Remote Monitoring System</p>
         <div class="hidden-footer">Ensuring safety and peace of mind.</div>
     </footer>
+
+    <!-- Include Bootstrap JS and its dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-```
-
-This code includes the Expo Snack embed code right after the hero section. The Expo Snack embed is a placeholder; you should replace it with the actual Snack ID of your app when you have it.
-
-The `nav` links for Instagram and Facebook are set to open in new tabs with `target="_blank"` and should point to your actual social media profiles. The "Download ARMOR" button is a call-to-action (CTA) that should link to your app's download page or store listing.
-
-The CSS included is minimal and should be expanded upon for a fully responsive and attractive design. You may want to consider adding a responsive design framework like Bootstrap or Tailwind CSS to help with this.
-
-This template is a starting point for your website, and you can further develop it by adding more content, styles, and functionality to meet your needs.
